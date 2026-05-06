@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Home</title>
+    <meta
+      name="description"
+      content="Portfolio home page featuring an about section, résumé, and writing/work samples."
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">◆</span>
+          <span class="brand-name">LeeAnne English-Stewart</span>
+        </div>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="nav-link is-active" href="./index.html">Home</a>
+          <a class="nav-link" href="./about.html">About Me</a>
+          <a class="nav-link" href="./resume.html">Resume</a>
+          <a class="nav-link" href="./samples.html">Samples</a>
+          <a class="nav-link" href="./project-management.html"
+            >Project Management</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-inner">
+          <aside class="profile-card" aria-label="Profile card">
+            <img
+              class="headshot headshot-card"
+              src="./assets/headshot.png"
+              alt="Professional headshot of LeeAnne English-Stewart"
+              width="360"
+              height="420"
+              loading="eager"
+            />
+
+            <h2 class="profile-name">LeeAnne English-Stewart</h2>
+            <p class="profile-tagline">
+              Writer. Editor. Policy-focused Communicator.
+            </p>
+          </aside>
+
+          <div class="hero-content hero-content-editorial">
+            <h1 class="hero-title hero-title-editorial">
+              Welcome
+            </h1>
+
+            <div class="editorial">
+              <p class="editorial-text">
+                I am a Writing, Rhetoric, and Technical Communication student at
+                James Madison University with interests in law, public policy,
+                and professional communication. This portfolio highlights my
+                academic work, editing experience, and collaborative projects
+                across research, policy, and strategic communication.
+              </p>
+            </div>
+
+            <article class="mini-card home-contact" aria-label="Contact">
+              <h2 class="mini-title">Contact</h2>
+              <p class="mini-text">
+                <span class="label">Email:</span>
+                <a href="mailto:leeannees16@gmail.com">leeannees16@gmail.com</a>
+              </p>
+              <p class="mini-text">
+                <span class="label">LinkedIn:</span>
+                <a
+                  href="https://www.linkedin.com/in/leeannees/"
+                  aria-label="LinkedIn profile link"
+                  target="_blank"
+                  rel="noreferrer"
+                  >linkedin.com/in/leeannees</a
+                >
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-text">
+          © <span id="year"></span> LeeAnne English-Stewart. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Resume</title>
+    <meta name="description" content="Resume page with embedded PDF." />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">◆</span>
+          <span class="brand-name">LeeAnne English-Stewart</span>
+        </div>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="nav-link" href="./index.html">Home</a>
+          <a class="nav-link" href="./about.html">About Me</a>
+          <a class="nav-link is-active" href="./resume.html">Resume</a>
+          <a class="nav-link" href="./samples.html">Samples</a>
+          <a class="nav-link" href="./project-management.html"
+            >Project Management</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="container section">
+      <div class="page-head">
+        <h1 class="page-title">Resume</h1>
+        <p class="page-subtitle">
+          Here's my resume!
+        </p>
+        <div class="page-actions">
+          <a class="btn" href="./assets/resume.pdf" download>Download PDF</a>
+        </div>
+      </div>
+
+      <section class="pdf-wrap" aria-label="Embedded resume PDF">
+        <object
+          class="pdf-object"
+          data="./assets/resume.pdf"
+          type="application/pdf"
+          aria-label="Resume PDF"
+        >
+          <div class="card">
+            <h2 class="card-title">PDF preview not available</h2>
+            <p class="card-text">
+              Your browser can’t display embedded PDFs. Use the download button
+              above, or open the file directly:
+              <a href="./assets/resume.pdf">resume.pdf</a>.
+            </p>
+          </div>
+        </object>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-text">
+          © <span id="year"></span> LeeAnne English-Stewart. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+
