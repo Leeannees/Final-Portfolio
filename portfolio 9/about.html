@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | About Me</title>
+    <meta name="description" content="About LeeAnne English-Stewart." />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">◆</span>
+          <span class="brand-name">LeeAnne English-Stewart</span>
+        </div>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="nav-link" href="./index.html">Home</a>
+          <a class="nav-link is-active" href="./about.html">About Me</a>
+          <a class="nav-link" href="./resume.html">Resume</a>
+          <a class="nav-link" href="./samples.html">Samples</a>
+          <a class="nav-link" href="./project-management.html"
+            >Project Management</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="container section">
+      <section class="about-layout" aria-label="About me content">
+        <img
+          class="about-top-photo"
+          src="./assets/about-photo.png"
+          alt="Photo of LeeAnne English-Stewart outdoors"
+          width="800"
+          height="800"
+          loading="eager"
+        />
+
+        <div class="editorial">
+          <h1 class="page-title">About Me</h1>
+          <p class="editorial-text">
+            Hey! My name is LeeAnne English-Stewart, and I will be graduating
+            from James Madison University in May 2026 with a major in Writing,
+            Rhetoric, and Technical Communication and a minor in Public Policy
+            and Administration. Through my coursework and professional
+            experiences, I have developed strong skills in analytical research,
+            audience awareness, and professional communication. These
+            experiences have shaped how I approach writing, collaboration, and
+            problem-solving across a variety of settings.
+          </p>
+
+          <p class="editorial-text">
+            I currently work as a Sales Intern at ALKU, a staffing firm where I
+            support recruiting and relationship-building efforts within the
+            government sector. In this role, I have gained experience
+            communicating with clients and consultants in fast-paced
+            professional environments while strengthening my networking and
+            interpersonal communication skills. My additional experience as a
+            Writing Consultant at the University Writing Center and as a server
+            has further reinforced the importance of adaptability,
+            collaboration, and clear communication when working with people
+            from different backgrounds and perspectives.
+          </p>
+          <p class="editorial-text">
+            My long-term interests are rooted in law and public service, where
+            I hope to combine communication, advocacy, and policy-focused work
+            to create meaningful public impact. As I continue developing
+            professionally, I hope to pursue opportunities that allow me to
+            engage directly with communities, solve complex problems, and
+            contribute to organizations focused on service and public
+            engagement.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="grid-2">
+          <article class="mini-card">
+            <h2 class="mini-title">Strengths</h2>
+            <ul class="mini-list">
+              <li>Analytical research</li>
+              <li>Professional writing</li>
+              <li>Client communication</li>
+              <li>Collaborative problem-solving</li>
+              <li>Editing &amp; revision</li>
+              <li>Audience awareness</li>
+            </ul>
+          </article>
+
+          <article class="mini-card">
+            <h2 class="mini-title">Interests</h2>
+            <ul class="mini-list">
+              <li>Public policy</li>
+              <li>Legal communication</li>
+              <li>Government operations</li>
+              <li>Advocacy &amp; public service</li>
+              <li>Strategic communication</li>
+              <li>Community engagement</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-text">
+          © <span id="year"></span> LeeAnne English-Stewart. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+
